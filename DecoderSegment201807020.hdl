@@ -7,9 +7,9 @@ CHIP DecoderSegment201807020 {
     Not (in=B, out=NotB);
     Not (in=C, out=NotC);
     Not (in=D, out=NotD);
-    And (a=NotA, b=NotC, out=V);
+    And (a=NotB, b=NotC, out=V);
     And (a=NotA, b=D, out=W);
-    And (a=C, b=NotD, out=X);
+    And (a=NotC, b=D, out=X);
     And (a=NotA, b=B, out=Y);
     And (a=A, b=NotB, out=Z);
     Or (a=V, b=W, out=T);
